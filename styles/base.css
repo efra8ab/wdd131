@@ -9,15 +9,19 @@ html, body {
 
 *
 {
-    display: initial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 header {
     background-color: rgb(72, 125, 81);
     font-weight: 500;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
 
 h1 {
@@ -38,6 +42,10 @@ nav ul {
     background-color: rgb(23, 54, 17);
     flex-wrap: wrap;
     width: 100%;
+}
+
+nav ul li {
+    padding: 10px;
 }
 
 nav ul li a {

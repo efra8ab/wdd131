@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Dynamic Web Fundamentals - Efrain O</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Efrain O">
-    <meta name="authoer" content="Efrain O.">
+    <meta name="author" content="Efrain O.">
+    <script src="/WDD131/scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
@@ -23,16 +24,20 @@
         </nav>
     </header>
     <main>
-        <section class="card">
+        <section class="card about-card">
             <h2>About me</h2>
-            <p>My name is Efrain, and I live in Mexico City. I currently work as an Owner Services Representative for a large timeshare company while pursuing a Bachelor's degree in Software Engineering.</p>
-            <img src="images/aboutMe.jpg" alt="About me picture" width="300">
+            <div class="aboutMe-container">
+                <p>My name is Efrain, and I live in Mexico City. I currently work as an Owner Services Representative for a large timeshare company while pursuing a Bachelor's degree in Software Engineering.</p>
+                <img src="images/aboutMe.jpg" alt="About me picture" width="300">
+            </div>
         </section>
-        <section class="card">
+        <section class="card resources-card">
             <h2>WebDev tools</h2>
             <nav>
-                <ul>
-                    <li><a href="www.coursera.org">Coursera</a></li>
+                <ul class="resources-list">
+                    <li><a href="https://www.coursera.org">Coursera</a></li>
+                    <li><a href="https://www.w3schools.com/w3css/defaulT.asp">W3 Schools</a></li>
+                    <li><a href="https://htmlcheatsheet.com/css/">Cheat Sheet</a></li>
                 </ul>
             </nav>
         </section>

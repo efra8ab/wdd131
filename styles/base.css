@@ -63,12 +63,21 @@ main {
     background: rgb(72, 125, 81);
     padding: 20px;
     text-align: left;
+    border-radius: 2%;
 }
 
 .aboutMe-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 1rem;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .card img {

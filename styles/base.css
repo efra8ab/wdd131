@@ -1,0 +1,48 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+*
+{
+    display: initial;
+}
+
+header {
+    background-color: rgb(72, 125, 81);
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    max-width: 80%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(23, 54, 17);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:azure;
+    font-weight: normal;
+    font-size: 20px;
+}

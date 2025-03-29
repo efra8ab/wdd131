@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+header {
+    background-color: rgb(72, 125, 81);
+    font-weight: 500;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(23, 54, 17);
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: rgb(72, 125, 81);
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(23, 54, 17);
+    text-align: center;
+    color: wheat;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: rgb(72, 125, 81);
+    padding: 20px;
+    text-align: left;
+    border-radius: 2%;
+}
+
+.aboutMe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card img {
+    max-width: 50%;
+    border-radius: 50px;
+    /*curves on the edges of the pic*/
+    padding: 1rem;
+}
+
+.card ul {
+    padding: 0;
+}
+
+.card ul li {
+    padding: 5px 0;
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.resources-card nav ul.resources-list {
+    display: block;
+    background-color: transparent;
+    margin-top: 0;
+}
+
+.card ul.resources-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resources-list li {
+    display: block;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+.resources-list li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(23, 54, 17);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background: rgb(72, 125, 81);
+    color: white;
+    text-align: left;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}

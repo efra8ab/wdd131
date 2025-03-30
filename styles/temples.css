@@ -89,3 +89,30 @@ figcaption {
     margin-top: 0.5rem;
     font-size: 0.9rem;
 }
+
+#menu {
+    display: block;
+    font-size: 3rem;
+    color: wheat;
+    text-decoration: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(23, 54, 17);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation.show {
+    display: flex;
+}
+

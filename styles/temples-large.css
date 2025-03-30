@@ -10,4 +10,15 @@
     nav ul li {
         margin: 0 15px;
     }
+
+    #menu{
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+    }
 }

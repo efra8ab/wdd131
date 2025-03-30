@@ -8,6 +8,7 @@
 
 header {
     background-color: rgb(72, 125, 81);
+    color: wheat;
     font-weight: 500;
     padding: 2rem;
     margin-bottom: 1rem;
@@ -25,6 +26,7 @@ nav ul {
     align-items: center;
     list-style: none;
     background-color: rgb(23, 54, 17);
+    color: wheat;
     padding: 0;
 }
 
@@ -74,9 +76,8 @@ footer p {
 }
 
 figure {
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
-    margin-bottom: 1rem;
 }
 
 img {

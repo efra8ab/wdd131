@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>MEXICO</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/bandera_mex.webp">
+
+            <img src="images/bellas_artes.webp" alt="Palacio de Bellas Artes">
+        </picture>
+        <section id="data">
+            <ul>
+                <li><strong>Area </strong> 1,964,375 sq Km</li>
+                <li><strong>Population </strong> 126,190,788</li>
+                <li><strong>Capital </strong> Mexico City</li>
+                <li><strong>Currency </strong> Mexican Peso</li>
+                <li><strong>Language </strong> Spanish</li>
+                <li><strong>Time Zone </strong> UTC -6</li>
+                <li><strong>Calling Code </strong> +52</li>
+                <li><strong>Driving Side </strong> Right</li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2>
+                <ul>
+                    <li><strong>Temperature</strong> 30°C</li>
+                    <li><strong>Conditions</strong> Sunny</li>
+                    <li><strong>Wind</strong> 10 km/h</li>
+                    <li><strong>Wind Chill</strong> 28°C</li>
+                </ul>
+            </h2>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Efrain Ochoa, MEX 🇲🇽 </p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

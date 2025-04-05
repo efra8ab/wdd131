@@ -1,0 +1,46 @@
+@media (min-width: 800px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    picture {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #data,
+    #weather {
+        position: absolute;
+        background-color: var(--box-bg);
+        border-radius: 0.5rem;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        width: 300px;
+    }
+
+    #data {
+        top: 20%;
+        left: 5%;
+    }
+
+    #weather {
+        bottom: 20%;
+        right: 5%;
+    }
+
+    #weather h2::after {
+        content: "⛅";
+        margin-left: 0.5rem;
+    }
+}

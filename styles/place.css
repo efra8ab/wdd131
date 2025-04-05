@@ -1,0 +1,123 @@
+:root{
+    --flag-green: #006341;
+    --flag-red: #ce1126;
+    --flag-white: #ffffff;
+    --text-color: #000000;
+    --heading-color: #ffffff;
+    --box-bg: rgba(255, 255, 255, 0.824);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: var(--flag-green);
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+header{
+    background-color: var(--flag-red);
+    color: var(--heading-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    letter-spacing: 1px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+picture, picture img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero{
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#data, #weather{
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--flag-green);
+    margin: 0 auto;
+    background-color: var(--box-bg);
+}
+
+#data::before {
+    content: "Data";
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+#weather h2 {
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+#weather h2::before {
+    content: "Weather";
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+#weather h2::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5rem;
+    background-image: url("/images/weather_icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#data ul,
+#weather ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#data ul li,
+#weather ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--flag-red);
+    color: var(--flag-white);
+    text-align: center;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+

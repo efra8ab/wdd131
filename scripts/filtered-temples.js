@@ -83,7 +83,7 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/preston-england/400x250/preston-temple-765117-wallpaper.jpg"
     },
     {
-        templeName: "Fukuoka Japan Temple",
+        templeName: "Fukuok Japan Temple",
         location: "Fukuoka, Japan",
         dedicated: "2000, June, 11",
         area: 10700,

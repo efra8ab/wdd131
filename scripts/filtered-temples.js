@@ -88,7 +88,15 @@ const temples = [
         dedicated: "2000, June, 11",
         area: 10700,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fukuoka-japan/400x250/fukuoka-japan-temple-lds-306863-wallpaper.jpg"
+    },
+    {
+        templeName: "Las Vegas Nevada Temple",
+        location: "Las Vegas, Nevada, United States",
+        dedicated: "1989, December, 18",
+        area: 80350,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/las-vegas-nevada/400x250/las-vegas-temple-762567-wallpaper.jpg"
     }
+
 ];
 
 const main = document.querySelector("main");

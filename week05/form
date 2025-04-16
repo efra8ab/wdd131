@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⭐ - Product Review - ⭐</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="suggestion-form">
+            <fieldset>
+                <label for="Product-Name"><strong>Product Name*</strong></label>
+                <select name="Product-Name" id="Product-Name" required>
+                    <option value="" disabled selected hidden>-- Select a product --</option>
+                </select>
+
+                <label>Overall Rating</label>
+                <div class="stars">
+                    
+                    <label for="5star">⭐⭐⭐⭐⭐</label>
+                    <input type="radio" id="5star" name="stars" value="5" required>
+                    
+                    <label for="4star">⭐⭐⭐⭐</label>
+                    <input type="radio" id="4star" name="stars" value="4" required>
+
+                    <label for="3star">⭐⭐⭐</label>
+                    <input type="radio" id="3star" name="stars" value="3" required>
+                    
+                    <label for="2star">⭐⭐</label>
+                    <input type="radio" id="2star" name="stars" value="2" required>
+
+                    <label for="1star">⭐</label>
+                    <input type="radio" id="1star" name="stars" value="1" required>
+
+                </div>
+
+                <label for="date">Date of installation </label>
+                <input type="date" name="date" id="date" required>
+
+                
+                <label>Which features did you find useful in the product? (Check all that apply)</label>
+                    <label for="checkbox-1">Durability</label>                
+                    <input type="checkbox" name="checkbox-1" id="checkbox-1" value="Durability">
+
+                    <label for="checkbox-2">Ease of use</label>
+                    <input type="checkbox" name="checkbox-2" id="checkbox-2" value="Ease of use">
+
+                    <label for="checkbox-3">Performance</label>
+                    <input type="checkbox" name="checkbox-3" id="checkbox-3" value="Performance">
+
+                    <label for="checkbox-4">Design</label>
+                    <input type="checkbox" name="checkbox-4" id="checkbox-4" value="Design">
+                    
+            </fieldset>
+
+            <fieldset>
+
+                <label for="correct"><strong>Correct Answer:*</strong></label>
+                <input type="text" id="correct" name="correct" required/>
+                
+                <label for="incorrect-1"><strong>Incorrect Answer #1:*</strong></label>
+                <input type="text" id="incorrect-1" name="incorrect-1" required/>
+               
+                <label for="incorrect-2">Incorrect Answer #2:</label>
+                <input type="text" id="incorrect-2" name="incorrect-2"/>
+
+                <label for="incorrect-3">Incorrect Answer #3:</label>
+                <input type="text" id="incorrect-3" name="incorrect-3"/>
+            </fieldset>
+
+            <input type="submit" value="Send Suggestion">
+        </form>
+    </main>
+
+</body>
+</html>

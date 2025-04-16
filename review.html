@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⭐ - Product Review - ⭐</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="reviewCount"></div>
+        <h1 class="form-submitted">Thank you for your review </h1>
+    </main>
+    <script type="module">
+        import {updateReviewCount} from "./scripts/form.js";
+        updateReviewCount();
+    </script>
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="form.html" class="review-again-button">Submit Another Review</a>
+    </div>
+
+<footer>
+    <p>© <span id="currentYear"></span> Efrain Ochoa, MEX 🇲🇽 </p>
+    <p>Last modification: <span id="lastModified"></span></p>
+</footer>
+<script src="scripts/getdates.js"></script>
+</body>
+
+</html>

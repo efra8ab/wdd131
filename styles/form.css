@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #1e3d9a;
+    --secondary-color: #7a8fcf;
+    --input-color: #bfbfbf;
+    --text-color: #04060c;
+    --secondary-text-color: #dadada;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 0.75rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header nav {
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    margin: 0 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Comfortaa', 'Roboto';
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 4rem auto;
+    min-height: 100vh;
+}
+
+main h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.product-review-form {
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 6px;
+    padding: 2rem;
+    border-collapse: collapse;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 100%;
+    max-width: 800px;
+}
+
+.product-review-form legend{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-review-form label {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    max-width: 500px;
+}
+
+
+
+.product-review-form input[type="submit"] {
+    outline: none;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.product-review-form input[type="submit"]:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-text-color);
+}
+
+.product-review-form select{
+    background-color: var(--input-color);
+    color: var(--text-color);
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap;
+}
+
+.star-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.product-review-form input[type="date"] {
+    width: 100%;
+    max-width: 600px;
+    font-size: large;
+    padding: 0.5rem;
+    background-color: var(--input-color);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+.checkbox-container label {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.product-review-form textarea {
+    width: 100%;
+    max-width: 600px;
+    font-size: large;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background-color: var(--input-color);
+}
+
+.product-review-form input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    font-size: large;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background-color: var(--input-color);
+}
+
+#reviewCount{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--secondary-text-color);
+    order: 2;
+}
+
+.form-submitted {
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+    margin: 0;
+    padding: 1rem; 
+}
+
+.review-again-button {
+    background-color: var(--secondary-text-color);
+    color: var(--text-color);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+    order: 3;
+    
+} 
+
+.review-again-button:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-text-color);
+}

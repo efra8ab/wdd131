@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⭐ - Product Review - ⭐</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="product-review-form">
+            <fieldset>
+
+                <label for="Product-Name"><strong>Product Name*</strong></label>
+                <select name="Product-Name" id="Product-Name" required>
+                    <option value="" disabled selected hidden>-- Select a product --</option>
+                </select>
+
+                <label>Overall Rating</label>
+                <div class="stars">
+                    <div class="star-container">
+                        <label for="1star">⭐</label>
+                        <input type="radio" id="1star" name="stars" value="1" required>
+                    </div>
+                    <div class="star-container">
+                        <label for="2star">⭐⭐</label>
+                        <input type="radio" id="2star" name="stars" value="2" required>
+                    </div>
+                    <div class="star-container">
+                        <label for="3star">⭐⭐⭐</label>
+                        <input type="radio" id="3star" name="stars" value="3" required>
+                    </div>
+                    <div class="star-container">
+                        <label for="4star">⭐⭐⭐⭐</label>
+                        <input type="radio" id="4star" name="stars" value="4" required>
+                    </div>
+                    <div class="star-container">
+                        <label for="5star">⭐⭐⭐⭐⭐</label>
+                        <input type="radio" id="5star" name="stars" value="5" required>
+                    </div>
+                </div>
+
+                <label for="date">Date of installation </label>
+                <input type="date" name="date" id="date" required>
+
+                
+                <label>Which features did you find useful in the product? (Check all that apply)</label>
+                <div class="checkbox-container"> 
+                    <input type="checkbox" name="checkbox-1" id="checkbox-1" value="Durability">
+                    <label for="checkbox-1">Durability</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="checkbox-2" id="checkbox-2" value="Ease of use">
+                    <label for="checkbox-2">Ease of use</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="checkbox-3" id="checkbox-3" value="Performance">
+                    <label for="checkbox-3">Performance</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="checkbox-4" id="checkbox-4" value="Design">
+                    <label for="checkbox-4">Design</label>
+                </div>
+
+                <label for="review">Written Review (optional)</label>
+                <textarea name="review" id="review" placeholder="Write your review here..."></textarea>
+                    
+                <label for="userName">Your Name (optional)</label>
+                <input type="text" name="userName" id="userName" placeholder="Enter your name here...">
+
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Efrain Ochoa, MEX 🇲🇽 </p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script type="module">
+        import { populateProductSelect } from "./scripts/form.js";
+        populateProductSelect();
+    </script>
+</body>
+</html>

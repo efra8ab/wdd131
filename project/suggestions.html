@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suggestion</title>
+    <title>🐔 - Suggest a question</title>
     <link rel="stylesheet" href="styles/suggestions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,22 +18,23 @@
             <a href="#">Home</a>
             <a href="#">Trivia</a>
             <a href="#">Scoreboard</a>
+            <a href="/project/suggestions.html">Suggest a question</a>
         </nav>
     </header>
     <main>
         <form method="get" action="suggestion-received.html" class="suggestion-form">
             <fieldset>
                 <legend>Suggest a new trivia question</legend> 
-                <label for="username"><strong>Username</strong></label>
+                <label for="username"><strong>Username*</strong></label>
                 <input type="text" id="username" name="username" required>
             </fieldset>
 
             <fieldset>
-                <label for="question"><strong>New Question</strong></label>
+                <label for="question"><strong>New Question*</strong></label>
                 <textarea id="question" name="question" required></textarea>
 
-                <label for="Cateogry"><strong>Category</strong></label>
-                <select name="category" id="Category" required>
+                <label for="Category"><strong>Category*</strong></label>
+                <select name="Category" id="Category" required>
                     <option value=" " disabled selected hidden>-- Select a category --</option>
                     <option value="movies">Movies</option>
                     <option value="music">Music</option>
@@ -41,10 +47,10 @@
 
             <fieldset>
 
-                <label for="correct"><strong>Correct Answer:</strong></label>
+                <label for="correct"><strong>Correct Answer:*</strong></label>
                 <input type="text" id="correct" name="correct" required/>
                 
-                <label for="incorrect-1"><strong>Incorrect Answer #1:</strong></label>
+                <label for="incorrect-1"><strong>Incorrect Answer #1:*</strong></label>
                 <input type="text" id="incorrect-1" name="incorrect-1" required/>
                
                 <label for="incorrect-2">Incorrect Answer #2:</label>

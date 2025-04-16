@@ -139,7 +139,7 @@ main h1{
     font-size: 1.2rem;
 }
 
-.product-review-form input[type="textarea"] {
+.product-review-form textarea {
     width: 100%;
     max-width: 600px;
     font-size: large;

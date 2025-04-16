@@ -31,19 +31,19 @@
                         <input type="radio" id="1star" name="stars" value="1" required>
                     </div>
                     <div class="star-container">
-                        <label for="2star">⭐</label>
+                        <label for="2star">⭐⭐</label>
                         <input type="radio" id="2star" name="stars" value="2" required>
                     </div>
                     <div class="star-container">
-                        <label for="3star">⭐</label>
+                        <label for="3star">⭐⭐⭐</label>
                         <input type="radio" id="3star" name="stars" value="3" required>
                     </div>
                     <div class="star-container">
-                        <label for="4star">⭐</label>
+                        <label for="4star">⭐⭐⭐⭐</label>
                         <input type="radio" id="4star" name="stars" value="4" required>
                     </div>
                     <div class="star-container">
-                        <label for="5star">⭐</label>
+                        <label for="5star">⭐⭐⭐⭐⭐</label>
                         <input type="radio" id="5star" name="stars" value="5" required>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                 </div>
 
                 <label for="review">Written Review (optional)</label>
-                <input type="textarea" name="review" id="review" placeholder="Write your review here...">
+                <textarea name="review" id="review" placeholder="Write your review here..."></textarea>
                     
                 <label for="userName">Your Name (optional)</label>
                 <input type="text" name="userName" id="userName" placeholder="Enter your name here...">
@@ -86,5 +86,9 @@
         <p>Last modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js" defer></script>
+    <script type="module">
+        import { populateProductSelect } from "./scripts/form.js";
+        populateProductSelect();
+    </script>
 </body>
 </html>

@@ -9,9 +9,11 @@
 header {
     background-color: var(--primary-color);
     color: var(--secondary-text-color);
-    padding: 1rem;
+    padding: 0.75rem;
     text-align: center;
     width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 header nav {
@@ -94,6 +96,11 @@ main h1{
     padding: 1rem;
 }
 
+.product-review-form input[type="submit"]:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-text-color);
+}
+
 .product-review-form select{
     background-color: var(--input-color);
     color: var(--text-color);
@@ -157,9 +164,42 @@ main h1{
     background-color: var(--input-color);
 }
 
+#reviewCount{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--secondary-text-color);
+    order: 2;
+}
+
+.form-submitted {
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+
 footer {
     background-color: var(--secondary-color);
     color: var(--secondary-text-color);
     margin: 0;
     padding: 1rem; 
+}
+
+.review-again-button {
+    background-color: var(--secondary-text-color);
+    color: var(--text-color);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+    order: 3;
+    
+} 
+
+.review-again-button:hover {
+    background-color: var(--text-color);
+    color: var(--secondary-text-color);
 }

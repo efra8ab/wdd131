@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion</title>
+    <link rel="stylesheet" href="styles/suggestions.css">
+</head>
+<body>
+    <header>
+        <h1>Suggest a trivia question</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Trivia</a>
+            <a href="#">Scoreboard</a>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="suggestion-received.html" class="suggestion-form">
+            <fieldset>
+                <legend>Suggest a new trivia question</legend> 
+                <label for="username"><strong>Username</strong></label>
+                <input type="text" id="username" name="username" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="question"><strong>New Question</strong></label>
+                <textarea id="question" name="question" required></textarea>
+
+                <label for="Cateogry"><strong>Category</strong></label>
+                <select name="category" id="Category" required>
+                    <option value=" " disabled selected hidden>-- Select a category --</option>
+                    <option value="movies">Movies</option>
+                    <option value="music">Music</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                    <option value="science">Science</option>
+                    <option value="tech">Tech</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+
+                <label for="correct"><strong>Correct Answer:</strong></label>
+                <input type="text" id="correct" name="correct" required/>
+                
+                <label for="incorrect-1"><strong>Incorrect Answer #1:</strong></label>
+                <input type="text" id="incorrect-1" name="incorrect-1" required/>
+               
+                <label for="incorrect-2">Incorrect Answer #2:</label>
+                <input type="text" id="incorrect-2" name="incorrect-2"/>
+
+                <label for="incorrect-3">Incorrect Answer #3:</label>
+                <input type="text" id="incorrect-3" name="incorrect-3"/>
+            </fieldset>
+
+            <input type="submit" value="Send Suggestion">
+        </form>
+    </main>
+
+</body>
+</html>

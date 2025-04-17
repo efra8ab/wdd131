@@ -1,6 +1,12 @@
+:root {
+    --primary-color: #8a3922;
+    --background-color: #f5efcc;
+    --text-color: white;
+}
+
 header {
-    background-color: #8a3922;
-    color: #f5efcc;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     padding: 1rem;
     text-align: center;
     width: 100%;
@@ -12,7 +18,7 @@ header nav {
 
 header nav a {
     margin: 0 1rem;
-    color: #f5efcc;
+    color: var(--background-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -23,8 +29,8 @@ header nav a:hover {
 
 body {
     font-family: 'Comfortaa', 'Roboto';
-    background-color: #f5efcc;
-    color: #8a3922;
+    background-color: var(--background-color);
+    color: var(--primary-color);
     display: block;
     padding: 0;
     margin: 0;
@@ -57,10 +63,15 @@ main h1{
     border-radius: 6px;
     padding: 2rem;
     border-collapse: collapse;
-    background-color: #f5efcc;
-    color: #8a3922;
+    background-color: var(--background-color);
+    color: var(--primary-color);
     width: 100%;
     max-width: 800px;
+}
+
+fieldset {
+    border: 7px solid var(--primary-color);
+    padding: 1rem;
 }
 
 .suggestion-form legend{
@@ -85,15 +96,15 @@ main h1{
     font-size: medium;
     margin-bottom: 1rem;
     margin-top: 0;
-    border: #8a3922 2px solid;
+    border: var(--primary-color) 2px solid;
 }
 
 .suggestion-form input[type="submit"] {
     outline: none;
-    border: 2px solid #8a3922;
-    background-color: #5a2415;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
     font-size: 1.2rem;
-    color: #f5efcc;
+    color: var(--background-color);
     margin-top: 1rem;
     padding: 1rem;
 }

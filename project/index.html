@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🍗 - Nugget Arcade - 🍗</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Efrain O">
+    <meta name="author" content="Efrain O.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            🍗 Nugget Arcade 🍗
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trivia.html">Play Trivia</a></li>
+                <li><a href="scoreboard.html">Scoreboard</a></li>
+                <li><a href="/project/suggestions.html">Suggest a Question</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="arcade-card hero-card">
+            <img src="images/home-image.png" alt="Pixel‑style chicken nuggets playing retro video games" class="about-image">
+        </section>
+
+        <section class="arcade-card menu-card">
+            <h2>Menu</h2>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="trivia.html">Play Trivia</a></li>
+                    <li><a href="scoreboard.html">View Scores</a></li>
+                    <li><a href="/project/suggestions.html">Suggest a Question</a></li>
+                    <li><a href="#">Dino Runner&nbsp;(Coming Soon)</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Efrain Ochoa, MEX 🇲🇽 </p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

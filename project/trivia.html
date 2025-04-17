@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="styles/trivia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Trivia Game</h1>
+        <nav>
+            <a href="/project/index.html">Home</a>
+            <a href="/project/trivia.html" aria-current="page">Trivia</a>
+            <a href="/project/scoreboard.html">Scoreboard</a>
+            <a href="/project/suggestions.html">Suggest a question</a>
+        </nav>
+    </header>
+    <main>
+        <section id="setup" class="trivia-section">
+            <label for="categorySelect"><strong>Select a category</strong></label>
+            <select id="categorySelect" required>
+                <option value="" disabled selected hidden>-- Select a category --</option>
+            </select>
+            <button id="startBtn">Start Game</button>
+        </section>
+
+        <section id="questionCard" class="trivia-section" hidden>
+            <h2 id="questionText"></h2>
+            <ul id="answers" class="answers"></ul>
+            <p id="feedback" role="status" aria-live="polite"></p>
+            <div class="status">
+                <span id="score">Score 0</span> |
+                <span id="progress">Q 0/0</span>
+            </div>
+            <button id="nextBtn" hidden>Next</button>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> Efrain Ochoa, MEX 🇲🇽 </p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/trivia.js"></script>
+</body>
+
+</html>

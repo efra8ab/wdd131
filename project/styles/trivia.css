@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #8a3922;
+    --background-color: #f5efcc;
+    --text-color: white;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+header nav {
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    margin: 0 1rem;
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Comfortaa', 'Roboto';
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 4rem auto;
+    min-height: 100vh;
+}
+
+.trivia-section {
+    width: 100%;
+    border: 7px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.trivia-section label,
+.trivia-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.trivia-section select,
+.trivia-section button {
+    background-color: #dadada;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.trivia-section button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.answers button {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.answers button.correct {
+    background-color: #15e415;
+}
+
+.answers button.wrong {
+    background-color: #f80a0a;
+}
+
+.status {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--background-color);
+    text-align: left;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
